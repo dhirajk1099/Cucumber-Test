@@ -1,41 +1,27 @@
 package StepDefinition;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
+import Resources.DriverInitialization;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
-public class LoginPageStepDefinition {
-
-	WebDriver driver = null;
-
-	@Before
-	public void beforeScenario() {
-		System.setProperty("webdriver.chrome.driver",
-				System.getProperty("user.dir") + "" + "/libraries/chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	}
-	
-	@After
-	public void afterScenario() {
-		driver.manage().deleteAllCookies();
-		driver.close();
-		driver.quit();
-	}
+public class LoginPageStepDefinition extends DriverInitialization {
 
 	@Given("I open the application")
-	public void openApplication() {
+	public void openApplication() throws IOException {
 
-		driver.get("https://www.amazon.com/");
+		driver.get(config.getProperty("URL"));
 	}
 
 	@Then("^I enter username \"([^\"]*)\"$")
@@ -56,7 +42,6 @@ public class LoginPageStepDefinition {
 	@Then("I click on submit button")
 	public void clcikSubmitBtn() {
 		driver.findElement(By.xpath("//input[@id='signInSubmit']")).click();
-		
 
 	}
 }
