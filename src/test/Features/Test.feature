@@ -1,21 +1,17 @@
 Feature: Cucumber Automation
 
-  Scenario: First Scenario
+  Scenario Outline: First Scenario
     Given I open the application
-    Then I enter username "ab"
-    And I enter password ba
+    Then I enter username "<username>"
+    And I enter password <password>
     And I click on submit button
 
-  #Scenario Outline: First Scenario
-    #Given I open the application
-    #Then I enter username "<Username>"
-    #And I enter password <Password>
-    #And I click on submit button
-#
-    #Examples: 
-      #| Username | Password |
-      #| ab       | ba       |
-      #| ab       | ba       |
-      #| ab       | ba       |
-      #| ab       | ba       |
-      #| ab       | ba       |
+    Examples: 
+      | username | password |
+      | ab       | ab       |
+      | abc      | ab       |
+      | abcd     | ab       |
+      | abcdef   | ab       |
+      | abdd     | ab       |
+      | abdfd    | ab       |
+      | abdf     | ab       |
