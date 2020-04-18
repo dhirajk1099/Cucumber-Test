@@ -7,11 +7,5 @@ Feature: Cucumber Automation
     And I click on submit button
 
     Examples: 
-      | username | password |
-      | ab       | ab       |
-      | abc      | ab       |
-      | abcd     | ab       |
-      | abcdef   | ab       |
-      | abdd     | ab       |
-      | abdfd    | ab       |
-      | abdf     | ab       |
+      | username   | password   |
+      | 9004962149 | Intel@1234 |

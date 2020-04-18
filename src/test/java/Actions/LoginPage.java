@@ -16,16 +16,16 @@ public class LoginPage extends BaseClass{
 	}
 
 	public void enterUsername(String username) {
-		driver.findElement(By.xpath("//a[@id='nav-link-accountList']")).click();
-		driver.findElement(By.xpath("//input[@name='email']")).sendKeys(username);
-		driver.findElement(By.xpath("//input[@type='submit']")).click();
+		clickElement(By.xpath("//a[@id='nav-link-accountList']"));
+		enterText(By.xpath("//input[@name='email']"), username);
+		clickElement(By.xpath("//input[@type='submit']"));
 	}
 
 	public void enterPassword(String password) {
-		driver.findElement(By.xpath("//input[@name='password']")).sendKeys(password);
+		enterText(By.xpath("//input[@name='password']"), password);
 	}
 
 	public void clickSubmit() {
-		driver.findElement(By.xpath("//input[@id='signInSubmit']")).click();
+		clickElement(By.xpath("//input[@id='signInSubmit']"));
 	}
 }

@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DriverInitialization {
 
-	public static WebDriver driver = null;
+	protected static WebDriver driver = null;
 	public static Properties config = new Properties();
 	public static FileInputStream fis = null;
 
