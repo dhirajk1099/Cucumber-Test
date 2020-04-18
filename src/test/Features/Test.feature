@@ -8,4 +8,4 @@ Feature: Cucumber Automation
 
     Examples: 
       | username   | password   |
-      | 9004962149 | Intel@1234 |
+      | 9004962149 | ab |
