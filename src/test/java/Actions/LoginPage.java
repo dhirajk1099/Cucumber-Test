@@ -1,31 +1,78 @@
 package Actions;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import Resources.DriverInitialization;
 
-public class LoginPage extends BaseClass{
+public class LoginPage extends BaseClass {
 
 	public LoginPage(WebDriver driver) {
 		super(driver);
 	}
 
 	public void openApplication() {
-		driver.get(DriverInitialization.config.getProperty("URL"));
+		getUrl(DriverInitialization.config.getProperty("URL"));
 	}
 
-	public void enterUsername(String username) {
-		clickElement(By.xpath("//a[@id='nav-link-accountList']"));
-		enterText(By.xpath("//input[@name='email']"), username);
-		clickElement(By.xpath("//input[@type='submit']"));
+	public void clickProfile() {
+		clickElementByLocator(By.xpath("//div[@class='desktop-userIconsContainer']"));
+	}
+
+	public void clickSignup() {
+		clickElementByLocator(By.xpath("//a[@data-track='signup']"));
+	}
+
+	public void emailAddress(String email) {
+		enterText(By.xpath("//input[@name='email']"), email);
 	}
 
 	public void enterPassword(String password) {
 		enterText(By.xpath("//input[@name='password']"), password);
 	}
 
+	public void enterMobile(String mobile) throws InterruptedException {
+		enterText(By.xpath("//input[@name='mobile']"), mobile);
+		Thread.sleep(5000);
+	}
+
+	public void selectGender(String text) {
+		List<WebElement> element = driver.findElements(By.xpath("//label[@class='register-gender-label']")); 
+//		boolean genderBtn =element.get(0).isSelected();
+//		System.out.println(genderBtn  +"  @@@@@@@@@@@@@@@@@@");
+//			if (genderBtn==true) {
+//				element.get(1).click();
+////				System.out.println("User wanted Gender is Selecte"+s);
+////			    element.get(i).click();
+//			}
+//			
+//			else {
+//				WebElement gender =element.get(0);
+//				clickElement(gender);
+//				System.out.println("didn't find the gender");
+//			}
+		
+		for(int i=0; i<element.size(); i++) {
+			WebElement gender = element.get(i);
+			String gendertext =element.get(i).getText();
+			//System.out.println(+gendertext);
+			if(gendertext.equalsIgnoreCase(text)) {
+				
+				clickElement(gender);
+			}
+			
+			else {
+				System.out.println("gender not found");
+			}
+			
+		}
+	}
+	
+
 	public void clickSubmit() {
-		clickElement(By.xpath("//input[@id='signInSubmit']"));
+		clickElementByLocator(By.xpath("//button[@class='register-register-button']"));
 	}
 }

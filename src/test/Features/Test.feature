@@ -1,11 +1,16 @@
 Feature: Cucumber Automation
 
-  Scenario Outline: First Scenario
+  Scenario Outline: Sign Up
     Given I open the application
-    Then I enter username "<username>"
-    And I enter password <password>
+    Then I click on Profile button
+    Then I click on Signup button
+    Then I enter email address <email>
+    Then I enter in choose password <password>
+    Then I enter mobile no <mobileNo>
+    Then I select the gender
     And I click on submit button
 
     Examples: 
-      | username   | password   |
-      | 9004962149 | ab |
+      | email                    | password  | mobileNo   |
+      | dhirajshuklalk@gmail.com | ab@123456 | 9004962149 |
+ 

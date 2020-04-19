@@ -1,1 +1,146 @@
-[]
+[
+  {
+    "source": "I open the application",
+    "steps": [
+      {
+        "name": "I open the application",
+        "aggregatedDurations": {
+          "median": 0.257,
+          "average": 0.257
+        },
+        "durations": [
+          {
+            "duration": 0.257,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/Test.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on Profile button",
+    "steps": [
+      {
+        "name": "I click on Profile button",
+        "aggregatedDurations": {
+          "median": 0.322,
+          "average": 0.322
+        },
+        "durations": [
+          {
+            "duration": 0.322,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/Test.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on Signup button",
+    "steps": [
+      {
+        "name": "I click on Signup button",
+        "aggregatedDurations": {
+          "median": 0.891,
+          "average": 0.891
+        },
+        "durations": [
+          {
+            "duration": 0.891,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/Test.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I enter email address ([^\"]*)$",
+    "steps": [
+      {
+        "name": "I enter email address dhirajshuklalk@gmail.com",
+        "aggregatedDurations": {
+          "median": 0.185,
+          "average": 0.185
+        },
+        "durations": [
+          {
+            "duration": 0.185,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/Test.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I enter in choose password ([^\"]*)$",
+    "steps": [
+      {
+        "name": "I enter in choose password ab@123456",
+        "aggregatedDurations": {
+          "median": 0.18,
+          "average": 0.18
+        },
+        "durations": [
+          {
+            "duration": 0.18,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/Test.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I enter mobile no ([^\"]*)$",
+    "steps": [
+      {
+        "name": "I enter mobile no 9004962149",
+        "aggregatedDurations": {
+          "median": 0.201,
+          "average": 0.201
+        },
+        "durations": [
+          {
+            "duration": 0.201,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/Test.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I select the gender",
+    "steps": [
+      {
+        "name": "I select the gender",
+        "aggregatedDurations": {
+          "median": 0.06,
+          "average": 0.06
+        },
+        "durations": [
+          {
+            "duration": 0.06,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/Test.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on submit button",
+    "steps": [
+      {
+        "name": "I click on submit button",
+        "aggregatedDurations": {
+          "median": 0.181,
+          "average": 0.181
+        },
+        "durations": [
+          {
+            "duration": 0.181,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/Test.feature:11"
+          }
+        ]
+      }
+    ]
+  }
+]
