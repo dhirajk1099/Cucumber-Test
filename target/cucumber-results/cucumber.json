@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-04-19T20:50:42.006Z",
+        "start_timestamp": "2020-04-22T04:33:23.069Z",
         "before": [
           {
             "result": {
-              "duration": 21038000000,
+              "duration": 3101000000,
               "status": "passed"
             },
             "match": {
@@ -15,16 +15,15 @@
             }
           }
         ],
-        "line": 15,
-        "name": "Sign Up",
+        "line": 3,
+        "name": "Verify Header Menu",
         "description": "",
-        "id": "cucumber-automation;sign-up;;2",
+        "id": "testing-homepage-functionality;verify-header-menu",
         "after": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027JJPL-212-PC\u0027, ip: \u0027192.168.0.103\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_221\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 9868, moz:profile: C:\\Users\\JJPL-212\\AppData\\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: f5c72289-4239-4bd1-afa4-cf59e1d3e57c\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)\r\n\tat Resources.DriverInitialization.tearDown(DriverInitialization.java:64)\r\n\tat Resources.Hooks.afterScenario(Hooks.java:22)\r\n",
-              "duration": 8836000000,
-              "status": "failed"
+              "duration": 8524000000,
+              "status": "passed"
             },
             "match": {
               "location": "Resources.Hooks.afterScenario()"
@@ -32,14 +31,14 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 7593000000,
+              "duration": 1537000000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "I open the application",
             "match": {
               "location": "StepDefinition.LoginPageStepDefinition.openApplication()"
@@ -48,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 576000000,
+              "duration": 145000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "I click on Profile button",
             "match": {
               "location": "StepDefinition.LoginPageStepDefinition.clickProfilebtn()"
@@ -60,28 +59,34 @@
           },
           {
             "result": {
-              "duration": 3618000000,
+              "duration": 2317000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "I click on Signup button",
+            "line": 7,
+            "name": "I click on \"log in\" buttonLink",
             "match": {
-              "location": "StepDefinition.LoginPageStepDefinition.clickSignpbtn()"
+              "arguments": [
+                {
+                  "val": "log in",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefinition.LoginPageStepDefinition.clickSignpbtn(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 281000000,
+              "duration": 173000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "I enter email address dhirajshuklalk@gmail.com",
+            "line": 8,
+            "name": "I enter email address \"dhirajshuklalk@gmail.com\"",
             "match": {
               "arguments": [
                 {
                   "val": "dhirajshuklalk@gmail.com",
-                  "offset": 22
+                  "offset": 23
                 }
               ],
               "location": "StepDefinition.LoginPageStepDefinition.enterEmail(java.lang.String)"
@@ -90,16 +95,16 @@
           },
           {
             "result": {
-              "duration": 39000000,
+              "duration": 124000000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "I enter in choose password ab@123456",
+            "line": 9,
+            "name": "I enter password \"Intel@1234\"",
             "match": {
               "arguments": [
                 {
-                  "val": "ab@123456",
-                  "offset": 27
+                  "val": "Intel@1234",
+                  "offset": 18
                 }
               ],
               "location": "StepDefinition.LoginPageStepDefinition.enterPassword(java.lang.String)"
@@ -108,54 +113,121 @@
           },
           {
             "result": {
-              "duration": 5057000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I enter mobile no 9004962149",
-            "match": {
-              "arguments": [
-                {
-                  "val": "9004962149",
-                  "offset": 18
-                }
-              ],
-              "location": "StepDefinition.LoginPageStepDefinition.enterMobileNo(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 436000000,
+              "duration": 5134000000,
               "status": "passed"
             },
             "line": 10,
-            "name": "I select the gender",
+            "name": "I click on \"Log in\" button",
             "match": {
-              "location": "StepDefinition.LoginPageStepDefinition.selectGender()"
+              "arguments": [
+                {
+                  "val": "Log in",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefinition.LoginPageStepDefinition.iClickOnButton(java.lang.String)"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 336000000,
+              "duration": 7683000000,
               "status": "passed"
             },
             "line": 11,
-            "name": "I click on submit button",
+            "name": "Verify header menu \"Men\" on homepage",
             "match": {
-              "location": "StepDefinition.LoginPageStepDefinition.clcikSubmitBtn()"
+              "arguments": [
+                {
+                  "val": "Men",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefinition.HomePageStepD.iVerifyHeaderMenu(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Verify header menu \"Women\" on homepage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Women",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefinition.HomePageStepD.iVerifyHeaderMenu(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat Actions.HomePage.verifyHeaderMenu(HomePage.java:16)\r\n\tat StepDefinition.HomePageStepD.iVerifyHeaderMenu(HomePageStepD.java:14)\r\n\tat ✽.Verify header menu \"Kid\" on homepage(file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/HomePageFunctionality.feature:13)\r\n",
+              "duration": 15224000000,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "Verify header menu \"Kid\" on homepage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Kid",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefinition.HomePageStepD.iVerifyHeaderMenu(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "Verify header menu \"Home \u0026 Living\" on homepage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Home \u0026 Living",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefinition.HomePageStepD.iVerifyHeaderMenu(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "Verify header menu \"Discover\" on homepage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Discover",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefinition.HomePageStepD.iVerifyHeaderMenu(java.lang.String)"
             },
             "keyword": "And "
           }
         ]
       }
     ],
-    "name": "Cucumber Automation",
+    "name": "Testing HomePage Functionality",
     "description": "",
-    "id": "cucumber-automation",
+    "id": "testing-homepage-functionality",
     "keyword": "Feature",
-    "uri": "file:src/test/Features/Test.feature",
+    "uri": "file:src/test/Features/HomePageFunctionality.feature",
     "tags": []
   }
 ]

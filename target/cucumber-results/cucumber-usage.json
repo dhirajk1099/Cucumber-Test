@@ -5,13 +5,13 @@
       {
         "name": "I open the application",
         "aggregatedDurations": {
-          "median": 0.593,
-          "average": 0.593
+          "median": 0.537,
+          "average": 0.537
         },
         "durations": [
           {
-            "duration": 0.593,
-            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/Test.feature:4"
+            "duration": 0.537,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/HomePageFunctionality.feature:5"
           }
         ]
       }
@@ -23,121 +23,116 @@
       {
         "name": "I click on Profile button",
         "aggregatedDurations": {
-          "median": 0.576,
-          "average": 0.576
+          "median": 0.145,
+          "average": 0.145
         },
         "durations": [
           {
-            "duration": 0.576,
-            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/Test.feature:5"
+            "duration": 0.145,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/HomePageFunctionality.feature:6"
           }
         ]
       }
     ]
   },
   {
-    "source": "I click on Signup button",
+    "source": "^I click on \"([^\"]*)\" buttonLink$",
     "steps": [
       {
-        "name": "I click on Signup button",
+        "name": "I click on \"log in\" buttonLink",
         "aggregatedDurations": {
-          "median": 0.618,
-          "average": 0.618
+          "median": 0.317,
+          "average": 0.317
         },
         "durations": [
           {
-            "duration": 0.618,
-            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/Test.feature:6"
+            "duration": 0.317,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/HomePageFunctionality.feature:7"
           }
         ]
       }
     ]
   },
   {
-    "source": "I enter email address ([^\"]*)$",
+    "source": "I enter email address \"([^\"]*)\"$",
     "steps": [
       {
-        "name": "I enter email address dhirajshuklalk@gmail.com",
+        "name": "I enter email address \"dhirajshuklalk@gmail.com\"",
         "aggregatedDurations": {
-          "median": 0.281,
-          "average": 0.281
+          "median": 0.173,
+          "average": 0.173
         },
         "durations": [
           {
-            "duration": 0.281,
-            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/Test.feature:7"
+            "duration": 0.173,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/HomePageFunctionality.feature:8"
           }
         ]
       }
     ]
   },
   {
-    "source": "I enter in choose password ([^\"]*)$",
+    "source": "I enter password \"([^\"]*)\"$",
     "steps": [
       {
-        "name": "I enter in choose password ab@123456",
+        "name": "I enter password \"Intel@1234\"",
         "aggregatedDurations": {
-          "median": 0.039,
-          "average": 0.039
+          "median": 0.124,
+          "average": 0.124
         },
         "durations": [
           {
-            "duration": 0.039,
-            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/Test.feature:8"
+            "duration": 0.124,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/HomePageFunctionality.feature:9"
           }
         ]
       }
     ]
   },
   {
-    "source": "I enter mobile no ([^\"]*)$",
+    "source": "^I click on \"([^\"]*)\" button$",
     "steps": [
       {
-        "name": "I enter mobile no 9004962149",
+        "name": "I click on \"Log in\" button",
         "aggregatedDurations": {
-          "median": 0.057,
-          "average": 0.057
+          "median": 0.134,
+          "average": 0.134
         },
         "durations": [
           {
-            "duration": 0.057,
-            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/Test.feature:9"
+            "duration": 0.134,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/HomePageFunctionality.feature:10"
           }
         ]
       }
     ]
   },
   {
-    "source": "I select the gender",
+    "source": "^Verify header menu \"([^\"]*)\" on homepage$",
     "steps": [
       {
-        "name": "I select the gender",
+        "name": "Verify header menu \"Men\" on homepage",
         "aggregatedDurations": {
-          "median": 0.436,
-          "average": 0.436
+          "median": 0.683,
+          "average": 0.683
         },
         "durations": [
           {
-            "duration": 0.436,
-            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/Test.feature:10"
+            "duration": 0.683,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/HomePageFunctionality.feature:11"
           }
         ]
-      }
-    ]
-  },
-  {
-    "source": "I click on submit button",
-    "steps": [
+      },
       {
-        "name": "I click on submit button",
+        "name": "Verify header menu \"Women\" on homepage",
         "aggregatedDurations": {
-          "median": 0.336,
-          "average": 0.336
+          "median": 0.018,
+          "average": 0.018
         },
         "durations": [
           {
-            "duration": 0.336,
-            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/Test.feature:11"
+            "duration": 0.018,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/HomePageFunctionality.feature:12"
           }
         ]
       }

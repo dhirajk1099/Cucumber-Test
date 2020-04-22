@@ -2,6 +2,7 @@ package Actions;
 
 import java.util.List;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,8 +23,8 @@ public class LoginPage extends BaseClass {
 		clickElementByLocator(By.xpath("//div[@class='desktop-userIconsContainer']"));
 	}
 
-	public void clickSignup() {
-		clickElementByLocator(By.xpath("//a[@data-track='signup']"));
+	public void clickSignup(String button) {
+		clickElementByLocator(By.xpath("//a[text()='"+button+"']"));
 	}
 
 	public void emailAddress(String email) {
@@ -40,39 +41,33 @@ public class LoginPage extends BaseClass {
 	}
 
 	public void selectGender(String text) {
-		List<WebElement> element = driver.findElements(By.xpath("//label[@class='register-gender-label']")); 
-//		boolean genderBtn =element.get(0).isSelected();
-//		System.out.println(genderBtn  +"  @@@@@@@@@@@@@@@@@@");
-//			if (genderBtn==true) {
-//				element.get(1).click();
-////				System.out.println("User wanted Gender is Selecte"+s);
-////			    element.get(i).click();
-//			}
-//			
-//			else {
-//				WebElement gender =element.get(0);
-//				clickElement(gender);
-//				System.out.println("didn't find the gender");
-//			}
-		
-		for(int i=0; i<element.size(); i++) {
+		List<WebElement> element = driver.findElements(By.xpath("//label[@class='register-gender-label']"));
+		for (int i = 0; i < element.size(); i++) {
 			WebElement gender = element.get(i);
-			String gendertext =element.get(i).getText();
-			//System.out.println(+gendertext);
-			if(gendertext.equalsIgnoreCase(text)) {
-				
+			String gendertext = element.get(i).getText();
+			if (gendertext.equalsIgnoreCase(text)) {
+
 				clickElement(gender);
 			}
-			
+
 			else {
 				System.out.println("gender not found");
 			}
-			
+
 		}
 	}
-	
 
 	public void clickSubmit() {
 		clickElementByLocator(By.xpath("//button[@class='register-register-button']"));
+	}
+	
+	public void clickButton(String button) throws InterruptedException {
+		clickElementByLocator(By.xpath("//button[text()='"+button+"']"));
+		Thread.sleep(5000);
+	}
+	
+	public void verifyLoginEmail(String text) {
+		String email = getText(By.xpath("//div[@class='desktop-infoEmail']"));
+	Assert.assertEquals(text, email);
 	}
 }

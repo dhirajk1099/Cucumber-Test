@@ -27,12 +27,27 @@ public class BaseClass {
 
 	public void clickElement(WebElement element) {
 		wait.until(ExpectedConditions.visibilityOf(element));
-		
 		element.click();
-		System.out.println("Selected text is :"+element.getText());
 	}
 	public void enterText(By locator, String text) {
 		driver.findElement(locator).sendKeys(text);
 	}
-
+    
+	public String getText(By locator) {
+		String locatortext= driver.findElement(locator).getText();
+		return locatortext;
+	}
+	
+	public boolean isElementPresent(By locator) {
+		boolean bol = true;
+		try {
+		driver.findElement(locator);
+		} catch(Exception e) {
+			bol = false;
+		}
+		return bol;
+			
+	}
+		
+	
 }

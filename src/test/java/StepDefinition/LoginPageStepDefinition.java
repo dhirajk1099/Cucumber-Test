@@ -26,32 +26,42 @@ public class LoginPageStepDefinition extends DriverInitialization {
 		lp.clickProfile();
 	}
 	
-	@Then("I click on Signup button")
-	public void clickSignpbtn() {
-		lp.clickSignup();
+	@Then("^I click on \"([^\"]*)\" buttonLink$")
+	public void clickSignpbtn(String button) {
+		lp.clickSignup(button);
 	}
 	
-	@Then("I enter email address ([^\"]*)$")
+	@Then("I enter email address \"([^\"]*)\"$")
 	public void enterEmail(String email) {
 		lp.emailAddress(email);
 	}
-	@Then("I enter in choose password ([^\"]*)$")
+	@Then("I enter password \"([^\"]*)\"$")
 	public void enterPassword(String password) {
 		lp.enterPassword(password);
 	}
 	
-	@Then("I enter mobile no ([^\"]*)$")
+	@Then("I enter mobile no \"([^\"]*)\"$")
 	public void enterMobileNo(String mobileno) throws InterruptedException {
 		  lp.enterMobile(mobileno);
 	}
 	
 	@Then("I select the gender")
 	public void selectGender() {
-		lp.selectGender("female");
+		lp.selectGender("male");
 		
 	}
 	@Then("I click on submit button")
 	public void clcikSubmitBtn() {
 		lp.clickSubmit();
+	}
+	
+	@And("^I click on \"([^\"]*)\" button$")
+	public void iClickOnButton(String button) throws InterruptedException {
+		lp.clickButton(button);
+	}
+	
+	@And("^I verify \"([^\"]*)\" text on profile section$")
+	public void iVerifyLoggedInUser(String email) {
+		lp.verifyLoginEmail(email);
 	}
 }

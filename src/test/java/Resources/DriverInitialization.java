@@ -2,11 +2,14 @@ package Resources;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverInitialization {
@@ -37,10 +40,22 @@ public class DriverInitialization {
 	public void driverInstance() {
 		String br = config.getProperty("Browser");
 		if (br.equalsIgnoreCase("Chrome")) {
+			
+			
+			ChromeOptions options = new ChromeOptions();
+			Map<String, Object> prefs = new HashMap<String, Object>();
+			prefs.put("profile.default_content_setting_values.notifications", 2);
+			options.setExperimentalOption("prefs", prefs);
+			//options.addArguments("disable-infobars");
+			//options.addArguments("–disable-notifications");
+			options.addArguments("--disable-extensions");
+			options.addArguments("start-maximized");
+			//options.addArguments("disable-browser-side-navigation");
 			System.setProperty("webdriver.chrome.driver",
 					System.getProperty("user.dir") + "" + "/libraries/chromedriver.exe");
-			driver = new ChromeDriver();
-			driver.manage().window().maximize();
+			driver = new ChromeDriver(options);
+			
+			//driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 			
 
