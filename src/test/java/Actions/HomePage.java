@@ -15,5 +15,5 @@ public class HomePage extends BaseClass {
 	boolean bool =	isElementPresent(By.xpath("//div[@class='desktop-navLinks']//a[text()='"+menuData+"']"));
 		Assert.assertTrue(bool);
 	}
-
+ 
 }
