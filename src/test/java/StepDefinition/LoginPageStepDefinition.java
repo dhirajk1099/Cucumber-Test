@@ -12,7 +12,7 @@ public class LoginPageStepDefinition extends DriverInitialization {
 	LoginPage lp = new LoginPage(driver);
 
 	@Given("I open the application")
-	public void openApplication() throws IOException {
+	public void openApplication() throws IOException, InterruptedException {
 		lp.openApplication();
 	}
 
