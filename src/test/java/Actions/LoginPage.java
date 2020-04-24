@@ -17,6 +17,7 @@ public class LoginPage extends BaseClass {
 
 	public void openApplication() {
 		getUrl(DriverInitialization.config.getProperty("URL"));
+		System.out.println("Dhiraj");
 	}
 
 	public void clickProfile() {
