@@ -18,6 +18,7 @@ public class LoginPage extends BaseClass {
 	public void openApplication() throws InterruptedException {
 		getUrl(DriverInitialization.config.getProperty("URL"));
 		Thread.sleep(3000);
+		System.out.println("Dhiraj");
 	}
 
 	public void clickProfile() {
