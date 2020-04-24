@@ -1,5 +1,7 @@
 package Actions;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -29,25 +31,38 @@ public class BaseClass {
 		wait.until(ExpectedConditions.visibilityOf(element));
 		element.click();
 	}
+
 	public void enterText(By locator, String text) {
 		driver.findElement(locator).sendKeys(text);
 	}
-    
+
 	public String getText(By locator) {
-		String locatortext= driver.findElement(locator).getText();
+		String locatortext = driver.findElement(locator).getText();
 		return locatortext;
 	}
-	
+
 	public boolean isElementPresent(By locator) {
 		boolean bol = true;
 		try {
-		driver.findElement(locator);
-		} catch(Exception e) {
+			driver.findElement(locator);
+		} catch (Exception e) {
 			bol = false;
 		}
 		return bol;
-			
+
 	}
-		
-	
+
+	public boolean isElementPresentInList(By locator, String text) {
+
+		List<WebElement> element = driver.findElements(locator);
+		for (int i = 0; i < element.size(); i++) {
+			if (element.get(i).getText().trim().equals(text)) {
+
+				return true;
+			}
+
+		}
+		return false;
+	}
+
 }

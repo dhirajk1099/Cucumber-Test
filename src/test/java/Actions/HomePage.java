@@ -16,4 +16,8 @@ public class HomePage extends BaseClass {
 		Assert.assertTrue(bool);
 	}
  
+	public void verifyOptionsUnderProfile(String text) {
+		boolean bool = isElementPresentInList(By.xpath("//div[contains(@class,'desktop-info')]"), text);
+		Assert.assertTrue(bool);
+	}
 }
