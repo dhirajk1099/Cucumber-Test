@@ -1,4 +1,6 @@
+
 Feature: Verify Login Page functionality
+
 
   Scenario: Verify login functionlity
     Given I open the application
@@ -8,5 +10,5 @@ Feature: Verify Login Page functionality
  		Then I enter password "Intel@1234"
  		And I click on "Log in" button
  		Then I click on Profile button
- 		And I verify "dhirajshuklalk@gmai.com" text on profile section
+ 		And I verify "dhirajshuklalk@gmail.com" text on profile section
  		

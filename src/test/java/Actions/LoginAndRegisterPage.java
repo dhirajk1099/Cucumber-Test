@@ -9,9 +9,9 @@ import org.openqa.selenium.WebElement;
 
 import Resources.DriverInitialization;
 
-public class LoginPage extends BaseClass {
+public class LoginAndRegisterPage extends BaseClass {
 
-	public LoginPage(WebDriver driver) {
+	public LoginAndRegisterPage(WebDriver driver) {
 		super(driver);
 	}
 
@@ -25,10 +25,13 @@ public class LoginPage extends BaseClass {
 		clickElementByLocator(By.xpath("//div[@class='desktop-userIconsContainer']"));
 	}
 
-	public void clickSignup(String button) {
-		clickElementByLocator(By.xpath("//a[text()='"+button+"']"));
+	public void clickSignup() {
+		clickElementByLocator(By.xpath("//a[@data-track='signup']"));
 	}
 
+	public void clickLogInButtonLink(String button) {
+		clickElementByLocator(By.xpath("//a[text()='"+button+"']"));
+	}
 	public void emailAddress(String email) {
 		enterText(By.xpath("//input[@name='email']"), email);
 	}
@@ -42,7 +45,7 @@ public class LoginPage extends BaseClass {
 		Thread.sleep(5000);
 	}
 
-	public void selectGender(String text) {
+	public boolean selectGender(String text) {
 		List<WebElement> element = driver.findElements(By.xpath("//label[@class='register-gender-label']"));
 		for (int i = 0; i < element.size(); i++) {
 			WebElement gender = element.get(i);
@@ -50,26 +53,35 @@ public class LoginPage extends BaseClass {
 			if (gendertext.equalsIgnoreCase(text)) {
 
 				clickElement(gender);
-			}
+				return true;
 
-			else {
-				System.out.println("gender not found");
 			}
 
 		}
+
+		return false;
 	}
 
-	public void clickSubmit() {
-		clickElementByLocator(By.xpath("//button[@class='register-register-button']"));
-	}
-	
+
 	public void clickButton(String button) throws InterruptedException {
-		clickElementByLocator(By.xpath("//button[text()='"+button+"']"));
+		clickElementByLocator(By.xpath("//button[text()='" + button + "']"));
 		Thread.sleep(5000);
 	}
-	
+
 	public void verifyLoginEmail(String text) {
 		String email = getText(By.xpath("//div[@class='desktop-infoEmail']"));
-	Assert.assertEquals(text, email);
+		Assert.assertEquals(text, email);
+	}
+	
+	public void clickRegister() {
+		clickElementByLocator(By.xpath("//button[@class='register-register-button']"));
+		
+}
+	public void verifyUserExist() {
+		clickElementByLocator(By.xpath("//div[@class='desktop-userIconsContainer']"));
+		boolean bool = isElementPresent(By.xpath("//a[text()='Sign up']"));
+		Assert.assertTrue(bool);
+		
+		
 	}
 }

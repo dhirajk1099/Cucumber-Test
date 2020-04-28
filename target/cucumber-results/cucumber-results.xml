@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="44.471">
-<testcase classname="Testing HomePage Functionality" name="Verify Header Menu" time="44.096">
-<failure message="" type="java.lang.AssertionError"><![CDATA[Given I open the application................................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="153.677">
+<testcase classname="Testing HomePage Functionality" name="Verify Header Menu" time="67.171">
+<system-out><![CDATA[Given I open the application................................................passed
 Then I click on Profile button..............................................passed
 Then I click on "log in" buttonLink.........................................passed
 Then I enter email address "dhirajshuklalk@gmail.com".......................passed
@@ -9,18 +9,54 @@ Then I enter password "Intel@1234"..........................................pass
 And I click on "Log in" button..............................................passed
 And Verify header menu "Men" on homepage....................................passed
 And Verify header menu "Women" on homepage..................................passed
-And Verify header menu "Kid" on homepage....................................failed
-And Verify header menu "Home & Living" on homepage..........................skipped
-And Verify header menu "Discover" on homepage...............................skipped
-
-StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at Actions.HomePage.verifyHeaderMenu(HomePage.java:16)
-	at StepDefinition.HomePageStepD.iVerifyHeaderMenu(HomePageStepD.java:14)
-	at ✽.Verify header menu "Kid" on homepage(file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/HomePageFunctionality.feature:13)
-]]></failure>
+And Verify header menu "Kids" on homepage...................................passed
+And Verify header menu "Home & Living" on homepage..........................passed
+And Verify header menu "Essentials" on homepage.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Testing HomePage Functionality" name="Verify the links Present on Profile Icon" time="32.29">
+<system-out><![CDATA[Given I open the application................................................passed
+Then I click on Profile button..............................................passed
+Then I click on "log in" buttonLink.........................................passed
+Then I enter email address "dhirajshuklalk@gmail.com".......................passed
+Then I enter password "Intel@1234"..........................................passed
+And I click on "Log in" button..............................................passed
+Then I click on Profile button..............................................passed
+Then I verify "Hello dhiraj" option under Profile dropdown..................passed
+Then I verify "dhirajshuklalk@gmail.com" option under Profile dropdown......passed
+Then I verify "Orders" option under Profile dropdown........................passed
+Then I verify "Wishlist" option under Profile dropdown......................passed
+Then I verify "Gift Cards" option under Profile dropdown....................passed
+Then I verify "Contact Us" option under Profile dropdown....................passed
+Then I verify "Myntra Insider New" option under Profile dropdown............passed
+Then I verify "Myntra Credit" option under Profile dropdown.................passed
+Then I verify "Coupons" option under Profile dropdown.......................passed
+Then I verify "Saved Cards" option under Profile dropdown...................passed
+Then I verify "Saved Addresses" option under Profile dropdown...............passed
+Then I verify "Logout" option under Profile dropdown........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Login Page functionality" name="Verify login functionlity" time="26.263">
+<system-out><![CDATA[Given I open the application................................................passed
+Then I click on Profile button..............................................passed
+Then I click on "log in" buttonLink.........................................passed
+Then I enter email address "dhirajshuklalk@gmail.com".......................passed
+Then I enter password "Intel@1234"..........................................passed
+And I click on "Log in" button..............................................passed
+Then I click on Profile button..............................................passed
+And I verify "dhirajshuklalk@gmail.com" text on profile section.............passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Sign Up Functionality" name="Sign Up" time="27.563">
+<system-out><![CDATA[Given I open the application................................................passed
+Then I click on Profile button..............................................passed
+Then I click on Sign up button..............................................passed
+Then I enter email address "dhirajshuklalk@gmail.com".......................passed
+Then I enter password "aB@123456"...........................................passed
+Then I enter mobile no "9004962149".........................................passed
+Then I select the gender....................................................passed
+And I click on register button..............................................passed
+And Verify user already exist...............................................passed
+]]></system-out>
 </testcase>
 </testsuite>

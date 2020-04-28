@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-04-22T04:33:23.069Z",
+        "start_timestamp": "2020-04-27T12:11:48.878Z",
         "before": [
           {
             "result": {
-              "duration": 3101000000,
+              "duration": 22711000000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 8524000000,
+              "duration": 14930000000,
               "status": "passed"
             },
             "match": {
@@ -35,31 +35,31 @@
         "steps": [
           {
             "result": {
-              "duration": 1537000000,
+              "duration": 8331000000,
               "status": "passed"
             },
             "line": 5,
             "name": "I open the application",
             "match": {
-              "location": "StepDefinition.LoginPageStepDefinition.openApplication()"
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.openApplication()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 145000000,
+              "duration": 2362000000,
               "status": "passed"
             },
             "line": 6,
             "name": "I click on Profile button",
             "match": {
-              "location": "StepDefinition.LoginPageStepDefinition.clickProfilebtn()"
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.clickProfilebtn()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2317000000,
+              "duration": 9153000000,
               "status": "passed"
             },
             "line": 7,
@@ -71,13 +71,13 @@
                   "offset": 12
                 }
               ],
-              "location": "StepDefinition.LoginPageStepDefinition.clickSignpbtn(java.lang.String)"
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.clickLoginbtnlink(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 173000000,
+              "duration": 3316000000,
               "status": "passed"
             },
             "line": 8,
@@ -89,13 +89,13 @@
                   "offset": 23
                 }
               ],
-              "location": "StepDefinition.LoginPageStepDefinition.enterEmail(java.lang.String)"
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.enterEmail(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 124000000,
+              "duration": 109000000,
               "status": "passed"
             },
             "line": 9,
@@ -107,13 +107,13 @@
                   "offset": 18
                 }
               ],
-              "location": "StepDefinition.LoginPageStepDefinition.enterPassword(java.lang.String)"
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.enterPassword(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 5134000000,
+              "duration": 5238000000,
               "status": "passed"
             },
             "line": 10,
@@ -125,13 +125,13 @@
                   "offset": 12
                 }
               ],
-              "location": "StepDefinition.LoginPageStepDefinition.iClickOnButton(java.lang.String)"
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.iClickOnLoginButton(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 7683000000,
+              "duration": 742000000,
               "status": "passed"
             },
             "line": 11,
@@ -149,7 +149,7 @@
           },
           {
             "result": {
-              "duration": 18000000,
+              "duration": 17000000,
               "status": "passed"
             },
             "line": 12,
@@ -167,16 +167,15 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat Actions.HomePage.verifyHeaderMenu(HomePage.java:16)\r\n\tat StepDefinition.HomePageStepD.iVerifyHeaderMenu(HomePageStepD.java:14)\r\n\tat ✽.Verify header menu \"Kid\" on homepage(file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/HomePageFunctionality.feature:13)\r\n",
-              "duration": 15224000000,
-              "status": "failed"
+              "duration": 20000000,
+              "status": "passed"
             },
             "line": 13,
-            "name": "Verify header menu \"Kid\" on homepage",
+            "name": "Verify header menu \"Kids\" on homepage",
             "match": {
               "arguments": [
                 {
-                  "val": "Kid",
+                  "val": "Kids",
                   "offset": 20
                 }
               ],
@@ -186,8 +185,8 @@
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 128000000,
+              "status": "passed"
             },
             "line": 14,
             "name": "Verify header menu \"Home \u0026 Living\" on homepage",
@@ -204,21 +203,378 @@
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 15000000,
+              "status": "passed"
             },
             "line": 15,
-            "name": "Verify header menu \"Discover\" on homepage",
+            "name": "Verify header menu \"Essentials\" on homepage",
             "match": {
               "arguments": [
                 {
-                  "val": "Discover",
+                  "val": "Essentials",
                   "offset": 20
                 }
               ],
               "location": "StepDefinition.HomePageStepD.iVerifyHeaderMenu(java.lang.String)"
             },
             "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-27T12:12:56.066Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2819000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Resources.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Verify the links Present on Profile Icon",
+        "description": "",
+        "id": "testing-homepage-functionality;verify-the-links-present-on-profile-icon",
+        "after": [
+          {
+            "result": {
+              "duration": 10566000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Resources.Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9650000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I open the application",
+            "match": {
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.openApplication()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 346000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I click on Profile button",
+            "match": {
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.clickProfilebtn()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2118000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click on \"log in\" buttonLink",
+            "match": {
+              "arguments": [
+                {
+                  "val": "log in",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.clickLoginbtnlink(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 229000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I enter email address \"dhirajshuklalk@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dhirajshuklalk@gmail.com",
+                  "offset": 23
+                }
+              ],
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.enterEmail(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 107000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I enter password \"Intel@1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Intel@1234",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.enterPassword(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5131000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click on \"Log in\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log in",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.iClickOnLoginButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 137000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I click on Profile button",
+            "match": {
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.clickProfilebtn()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 214000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I verify \"Hello dhiraj\" option under Profile dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Hello dhiraj",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefinition.HomePageStepD.iVerifyOptionsUnderProfile(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I verify \"dhirajshuklalk@gmail.com\" option under Profile dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dhirajshuklalk@gmail.com",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefinition.HomePageStepD.iVerifyOptionsUnderProfile(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I verify \"Orders\" option under Profile dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Orders",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefinition.HomePageStepD.iVerifyOptionsUnderProfile(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 57000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I verify \"Wishlist\" option under Profile dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Wishlist",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefinition.HomePageStepD.iVerifyOptionsUnderProfile(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 66000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I verify \"Gift Cards\" option under Profile dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Gift Cards",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefinition.HomePageStepD.iVerifyOptionsUnderProfile(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 78000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I verify \"Contact Us\" option under Profile dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Contact Us",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefinition.HomePageStepD.iVerifyOptionsUnderProfile(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 85000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I verify \"Myntra Insider New\" option under Profile dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Myntra Insider New",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefinition.HomePageStepD.iVerifyOptionsUnderProfile(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 96000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I verify \"Myntra Credit\" option under Profile dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Myntra Credit",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefinition.HomePageStepD.iVerifyOptionsUnderProfile(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 123000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I verify \"Coupons\" option under Profile dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Coupons",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefinition.HomePageStepD.iVerifyOptionsUnderProfile(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 114000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I verify \"Saved Cards\" option under Profile dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Saved Cards",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefinition.HomePageStepD.iVerifyOptionsUnderProfile(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 116000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I verify \"Saved Addresses\" option under Profile dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Saved Addresses",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefinition.HomePageStepD.iVerifyOptionsUnderProfile(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 130000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I verify \"Logout\" option under Profile dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Logout",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefinition.HomePageStepD.iVerifyOptionsUnderProfile(java.lang.String)"
+            },
+            "keyword": "Then "
           }
         ]
       }
@@ -228,6 +584,346 @@
     "id": "testing-homepage-functionality",
     "keyword": "Feature",
     "uri": "file:src/test/Features/HomePageFunctionality.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-04-27T12:13:28.361Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2371000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Resources.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Verify login functionlity",
+        "description": "",
+        "id": "verify-login-page-functionality;verify-login-functionlity",
+        "after": [
+          {
+            "result": {
+              "duration": 10556000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Resources.Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5479000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I open the application",
+            "match": {
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.openApplication()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 150000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on Profile button",
+            "match": {
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.clickProfilebtn()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1535000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on \"log in\" buttonLink",
+            "match": {
+              "arguments": [
+                {
+                  "val": "log in",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.clickLoginbtnlink(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 763000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter email address \"dhirajshuklalk@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dhirajshuklalk@gmail.com",
+                  "offset": 23
+                }
+              ],
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.enterEmail(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 94000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter password \"Intel@1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Intel@1234",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.enterPassword(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5133000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on \"Log in\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log in",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.iClickOnLoginButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 133000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click on Profile button",
+            "match": {
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.clickProfilebtn()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 41000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I verify \"dhirajshuklalk@gmail.com\" text on profile section",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dhirajshuklalk@gmail.com",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.iVerifyLoggedInUser(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Verify Login Page functionality",
+    "description": "",
+    "id": "verify-login-page-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/Features/Login.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-04-27T12:13:54.628Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2334000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Resources.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Sign Up",
+        "description": "",
+        "id": "verify-sign-up-functionality;sign-up;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 9670000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Resources.Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5226000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open the application",
+            "match": {
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.openApplication()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 138000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on Profile button",
+            "match": {
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.clickProfilebtn()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1738000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on Sign up button",
+            "match": {
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.clickSignpbtn()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2747000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter email address \"dhirajshuklalk@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dhirajshuklalk@gmail.com",
+                  "offset": 23
+                }
+              ],
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.enterEmail(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 88000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter password \"aB@123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "aB@123456",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.enterPassword(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5096000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter mobile no \"9004962149\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9004962149",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.enterMobileNo(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 160000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I select the gender",
+            "match": {
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.selectGender()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 193000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click on register button",
+            "match": {
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.clickRegisterBtn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 149000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Verify user already exist",
+            "match": {
+              "location": "StepDefinition.LoginAndRegisterPageStepDefinition.verifyUserIsRegistered()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Verify Sign Up Functionality",
+    "description": "",
+    "id": "verify-sign-up-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/Features/SignUp.feature",
     "tags": []
   }
 ]

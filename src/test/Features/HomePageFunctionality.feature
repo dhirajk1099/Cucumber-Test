@@ -12,7 +12,7 @@ Scenario: Verify Header Menu
  	  And Verify header menu "Women" on homepage
  	  And Verify header menu "Kids" on homepage
  	  And Verify header menu "Home & Living" on homepage
-    And Verify header menu "Discover" on homepage
+    And Verify header menu "Essentials" on homepage
     
     
  Scenario: Verify the links Present on Profile Icon
