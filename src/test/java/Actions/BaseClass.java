@@ -1,10 +1,12 @@
 package Actions;
 
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -12,6 +14,7 @@ public class BaseClass {
 
 	public WebDriver driver = null;
 	public WebDriverWait wait = null;
+	public Actions action = null;
 
 	public BaseClass(WebDriver driver) {
 		this.driver = driver;
@@ -64,5 +67,34 @@ public class BaseClass {
 		}
 		return false;
 	}
+	
+	public void hoverOnElement(By locator) {
+		action = new Actions(driver);
+		WebElement target=driver.findElement(locator);
+		action.moveToElement(target).build().perform();
+	}
 
+	public void switchNewWindow() throws InterruptedException {
+		Thread.sleep(2000);
+		String parentWindow = driver.getWindowHandle();
+		Set<String> win = driver.getWindowHandles();
+		for(String s:win) {
+			if(!s.equals(parentWindow)) {
+				driver.switchTo().window(s);
+			}
+		}
+	}
+	
+	public void switchToParentWindow() {
+		String parentWindow = driver.getWindowHandle();
+		Set<String> win = driver.getWindowHandles();
+		driver.close();
+		for(String s:win) {
+			if(!s.equals(parentWindow)) {
+				driver.switchTo().window(s);
+				
+			}
+			
+		}
+	}
 }

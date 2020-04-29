@@ -1,7 +1,7 @@
 
 Feature: Verify Login Page functionality
 
-
+@SmokeTest
   Scenario: Verify login functionlity
     Given I open the application
     Then I click on Profile button

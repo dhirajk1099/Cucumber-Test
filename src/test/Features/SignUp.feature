@@ -1,6 +1,7 @@
 
 Feature: Verify Sign Up Functionality
 
+@SmokeTest
   Scenario Outline: Sign Up
     Given I open the application
     Then I click on Profile button
