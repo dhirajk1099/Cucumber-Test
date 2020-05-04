@@ -41,7 +41,6 @@ public class DriverInitialization {
 		String br = config.getProperty("Browser");
 		if (br.equalsIgnoreCase("Chrome")) {
 			
-			
 			ChromeOptions options = new ChromeOptions();
 			Map<String, Object> prefs = new HashMap<String, Object>();
 			prefs.put("profile.default_content_setting_values.notifications", 2);
@@ -70,6 +69,10 @@ public class DriverInitialization {
 			System.out.println("Browser Not found");
 		}
 
+	}
+	
+	public WebDriver getDriver() {
+		return driver;
 	}
 
 	public void tearDown() throws IOException {

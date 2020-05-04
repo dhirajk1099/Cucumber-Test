@@ -31,18 +31,27 @@ public class LoginAndRegisterPageStepDefinition extends DriverInitialization {
 		lp.clickSignup();
 	}
 	
+	@Then("^I click on \"([^\"]*)\" button$")
+	public void clickLoginBtn(String button) {
+		lp.clickLoginBtn(button);
+	}
 	@Then("^I click on \"([^\"]*)\" buttonLink$")
 	public void clickLoginbtnlink(String button) {
 		lp.clickLogInButtonLink(button);
 	}
 	
-	@Then("I enter email address \"([^\"]*)\"$")
-	public void enterEmail(String email) {
-		lp.emailAddress(email);
+	@Then("I enter phoneNo \"([^\"]*)\"$")
+	public void phone(String phone) {
+		lp.phoneNo(phone);
 	}
 	@Then("I enter password \"([^\"]*)\"$")
 	public void enterPassword(String password) {
 		lp.enterPassword(password);
+	}
+	
+	@Then("I click on continue button")
+	public void clickContinueBtn() throws InterruptedException {
+		lp.clickContinueButton();
 	}
 	
 	@Then("I enter mobile no \"([^\"]*)\"$")
@@ -57,11 +66,7 @@ public class LoginAndRegisterPageStepDefinition extends DriverInitialization {
 	}
 	
 	
-	@And("^I click on \"([^\"]*)\" button$")
-	public void iClickOnLoginButton(String button) throws InterruptedException {
-		lp.clickButton(button);
-	}
-	
+
 	@And("^I verify \"([^\"]*)\" text on profile section$")
 	public void iVerifyLoggedInUser(String email) {
 		lp.verifyLoginEmail(email);

@@ -6,6 +6,8 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import Resources.DriverInitialization;
 
@@ -29,16 +31,28 @@ public class LoginAndRegisterPage extends BaseClass {
 		clickElementByLocator(By.xpath("//a[@data-track='signup']"));
 	}
 
-	public void clickLogInButtonLink(String button) {
-		clickElementByLocator(By.xpath("//a[text()='"+button+"']"));
+	public void clickLoginBtn(String button) {
+		clickElementByLocator(By.xpath("//button[text()='" + button + "']"));
 	}
-	public void emailAddress(String email) {
-		enterText(By.xpath("//input[@name='email']"), email);
+
+	public void clickLogInButtonLink(String button) {
+		clickElementByLocator(By.xpath("//a[text()='" + button + "']"));
+	}
+
+	public void phoneNo(String phone) {
+		enterText(By.xpath("//input[@class='form-control mobileNumberInput']"), phone);
 	}
 
 	public void enterPassword(String password) {
-		enterText(By.xpath("//input[@name='password']"), password);
-	}
+		try {
+			  enterText(By.xpath("//span[text()=' Password']/preceding-sibling::input"), password);		
+		}
+		catch(Exception e) {
+			
+		}
+			}
+			
+	
 
 	public void enterMobile(String mobile) throws InterruptedException {
 		enterText(By.xpath("//input[@name='mobile']"), mobile);
@@ -62,9 +76,8 @@ public class LoginAndRegisterPage extends BaseClass {
 		return false;
 	}
 
-
-	public void clickButton(String button) throws InterruptedException {
-		clickElementByLocator(By.xpath("//button[text()='" + button + "']"));
+	public void clickContinueButton() throws InterruptedException {
+		clickElementByLocator(By.xpath("//div[text()='CONTINUE']"));
 		Thread.sleep(5000);
 	}
 
@@ -72,16 +85,16 @@ public class LoginAndRegisterPage extends BaseClass {
 		String email = getText(By.xpath("//div[@class='desktop-infoEmail']"));
 		Assert.assertEquals(text, email);
 	}
-	
+
 	public void clickRegister() {
 		clickElementByLocator(By.xpath("//button[@class='register-register-button']"));
-		
-}
+
+	}
+
 	public void verifyUserExist() {
 		clickElementByLocator(By.xpath("//div[@class='desktop-userIconsContainer']"));
 		boolean bool = isElementPresent(By.xpath("//a[text()='Sign up']"));
 		Assert.assertTrue(bool);
-		
-		
+
 	}
 }

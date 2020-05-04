@@ -1,7 +1,7 @@
 package Resources;
 
 import org.junit.runner.RunWith;
-
+import com.vimalselvam.cucumber.listener.ExtentCucumberFormatter;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
@@ -12,7 +12,8 @@ import io.cucumber.junit.CucumberOptions;
 		monochrome=true,
 		tags= {"@SmokeTests"},
 		plugin= {"html:target/cucumber-results", "usage:target/cucumber-results/cucumber-usage.json",                 
-		"junit:target/cucumber-results/cucumber-results.xml", "json:target/cucumber-results/cucumber.json"}
+		"junit:target/cucumber-results/cucumber-results.xml", 
+		"json:target/cucumber-results/cucumber.json"}
 		
 		)
 public class TestRunner {
