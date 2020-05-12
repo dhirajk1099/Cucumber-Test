@@ -12,7 +12,7 @@ Feature: Verify Sign Up Functionality
     Then I select the gender
     And I click on register button
     And Verify user already exist
-
+ 
     Examples: 
       | email                    | password  | mobileNo   |
       | dhirajshuklalk@gmail.com | aB@123456 | 9004962149 |

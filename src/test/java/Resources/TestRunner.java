@@ -1,7 +1,6 @@
 package Resources;
 
 import org.junit.runner.RunWith;
-import com.vimalselvam.cucumber.listener.ExtentCucumberFormatter;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
