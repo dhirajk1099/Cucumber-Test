@@ -50,6 +50,7 @@ public class DriverInitialization {
 			options.addArguments("--disable-extensions");
 			options.addArguments("start-maximized");
 			//options.addArguments("disable-browser-side-navigation");
+			
 			System.setProperty("webdriver.chrome.driver",
 					System.getProperty("user.dir") + "" + "/libraries/chromedriver.exe");
 			driver = new ChromeDriver(options);

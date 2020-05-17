@@ -10,12 +10,13 @@ public class CanonHomePageStepDef extends DriverInitialization{
 	CanonHomePage chp = new CanonHomePage(driver);
 	
 	@Given("I open my application")
-	public void iOpenapplication(){
+	public void iOpenapplication() throws InterruptedException{
 		chp.openUrl();
+		
 	}
 	
 	@Then("I click on PromoBtn popup")
-	public void clickPromoBtn() {
+	public void clickPromoBtn() throws InterruptedException {
 		chp.clickPromoBtn();
 	}
 	
@@ -29,15 +30,44 @@ public class CanonHomePageStepDef extends DriverInitialization{
 		chp.clickCanonLoginLink(text);
 	}
 	@Then("^I enter emailAddress \"([^\"]*)\"$")
-	public void i_enter_emailAddress() {
+	public void i_enter_emailAddress(String text) {
+		chp.enterEmailAddress(text);
 	}
 
 	@Then("^I enter user password \"([^\"]*)\"$")
-	public void i_enter_password() {
+	public void i_enter_password(String password) {
+		chp.enterPassword(password);
 	}
 
 	@Then("^I click on Login button$")
 	public void i_click_on_Login_button() {
+		chp.clickLoginButtonOfCanon();
+		
 	}
 	
+	@Given("^I am on homepage$")
+	public void verifyUserIsOnHomePage() {
+		chp.verifyUserOnHomePage();
+	}
+	
+	@Then("^I enter the product Sku in searchBox \"([^\"]*)\"$")
+	public void searchProduct(String sku) throws Exception {
+		chp.searchProductSku(sku);	
+	}
+	
+	@Then("^I click on suggested \"([^\"]*)\" title$")
+	public void clickSuggestedTitle(String title) {
+		chp.clickOnSuggestionList(title);
+		
+	}
+	@Then("^I verify the \"([^\"]*)\" of the Product on PDP page$")    
+	public void verifyProductOnPdp(String productName) {
+		  chp.verifySkuOnPdpPage(productName);
+	}
+	
+	@Then("^I verify the \"([^\"]*)\" status on PDP page$")
+	public void verifyStockStatus(String stockStatus) {
+		chp.verifyStock(stockStatus);
+	}
 }
+

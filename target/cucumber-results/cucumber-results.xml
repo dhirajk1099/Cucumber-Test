@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="141.763">
+<testcase classname="Search product Feature" name="Verfiy search product and add to cart functionality" time="66.647">
+<system-out><![CDATA[Given I open my application.................................................passed
+Then I click on PromoBtn popup..............................................passed
+Then I click on MyAccountLogo button........................................passed
+Then I click on the "Login" buttonLink......................................passed
+Then I enter emailAddress "dhiraj.shukla@adapty.com"........................passed
+Then I enter user password "Intel@1234".....................................passed
+Then I click on Login button................................................passed
+Given I am on homepage......................................................passed
+Then I enter the product Sku in searchBox "1073C001"........................passed
+Then I click on suggested "PowerShot SX620 HS Red" title....................passed
+Then I verify the "PowerShot SX620 HS Red" of the Product on PDP page.......passed
+Then I verify the "In stock" status on PDP page.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search product Feature" name="Verfiy search product and add to cart functionality 2" time="74.721">
+<system-out><![CDATA[Given I open my application.................................................passed
+Then I click on PromoBtn popup..............................................passed
+Then I click on MyAccountLogo button........................................passed
+Then I click on the "Login" buttonLink......................................passed
+Then I enter emailAddress "dhiraj.shukla@adapty.com"........................passed
+Then I enter user password "Intel@1234".....................................passed
+Then I click on Login button................................................passed
+Given I am on homepage......................................................passed
+Then I enter the product Sku in searchBox "3075C002"........................passed
+Then I click on suggested "EOS R Body" title................................passed
+Then I verify the "EOS R Body" of the Product on PDP page...................passed
+Then I verify the "In stock" status on PDP page.............................passed
+]]></system-out>
+</testcase>
+</testsuite>
