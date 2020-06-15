@@ -21,7 +21,7 @@ Feature: Search product Feature
     Examples: 
       | Sku      | SuggestedTitel         | Titel                  |
       | 1073C001 | PowerShot SX620 HS Red | PowerShot SX620 HS Red |
-      | 3075C002 | EOS R Body             | EOS R Body             |
+      | 3075C002 | EOS R Body             | EOS R Boddy            |
 
   Scenario Outline: Verfiy add to cart functionality for Hardwar+Carepak product
     Given I am on homepage
