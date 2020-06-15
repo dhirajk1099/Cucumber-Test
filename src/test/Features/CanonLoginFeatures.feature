@@ -10,7 +10,9 @@ Feature: Login Feature
     Then I click on Login button
     Then I verify user is loggedIn
 
+
     Examples: 
       | EamilId                  | Password   |
       | dhiraj.shukla@adapty.com | Intel@1234 |
+      
       

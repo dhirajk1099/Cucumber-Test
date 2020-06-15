@@ -65,9 +65,15 @@ public class CanonHomePageStepDef extends DriverInitialization{
 		  chp.verifySkuOnPdpPage(productName);
 	}
 	
-	@Then("^I verify the \"([^\"]*)\" status on PDP page$")
-	public void verifyStockStatus(String stockStatus) {
-		chp.verifyStock(stockStatus);
+	@Then("^I verify the status on PDP page$")
+	public void verifyStockStatus() {
+		chp.verifyStock();
 	}
+	
+	@Then("^Add the product in to cart$")
+	public void addProductToCart() {
+		chp.addProductInCart();
+	}
+	
 }
 
