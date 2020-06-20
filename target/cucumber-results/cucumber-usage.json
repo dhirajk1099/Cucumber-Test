@@ -1,0 +1,210 @@
+[
+  {
+    "source": "I open my application",
+    "steps": [
+      {
+        "name": "I open my application",
+        "aggregatedDurations": {
+          "median": 0.533,
+          "average": 0.159
+        },
+        "durations": [
+          {
+            "duration": 0.567,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:4"
+          },
+          {
+            "duration": 0.533,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:4"
+          },
+          {
+            "duration": 0.377,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on PromoBtn popup",
+    "steps": [
+      {
+        "name": "I click on PromoBtn popup",
+        "aggregatedDurations": {
+          "median": 0.322,
+          "average": 0.314666666
+        },
+        "durations": [
+          {
+            "duration": 0.256,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:5"
+          },
+          {
+            "duration": 0.322,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:5"
+          },
+          {
+            "duration": 0.366,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on MyAccountLogo button",
+    "steps": [
+      {
+        "name": "I click on MyAccountLogo button",
+        "aggregatedDurations": {
+          "median": 0.159,
+          "average": 0.116666666
+        },
+        "durations": [
+          {
+            "duration": 0.268,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:6"
+          },
+          {
+            "duration": 0.923,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:6"
+          },
+          {
+            "duration": 0.159,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on the \"([^\"]*)\" buttonLink$",
+    "steps": [
+      {
+        "name": "I click on the \"Login\" buttonLink",
+        "aggregatedDurations": {
+          "median": 0.578,
+          "average": 0.876666666
+        },
+        "durations": [
+          {
+            "duration": 0.568,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:7"
+          },
+          {
+            "duration": 0.484,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:7"
+          },
+          {
+            "duration": 0.578,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I enter emailAddress \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I enter emailAddress \"dhiraj.shukla@adapty.com\"",
+        "aggregatedDurations": {
+          "median": 0.147,
+          "average": 0.144666666
+        },
+        "durations": [
+          {
+            "duration": 0.138,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:8"
+          },
+          {
+            "duration": 0.147,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:8"
+          },
+          {
+            "duration": 0.149,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I enter user password \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I enter user password \"Intel@1234\"",
+        "aggregatedDurations": {
+          "median": 0.099,
+          "average": 0.103333333
+        },
+        "durations": [
+          {
+            "duration": 0.091,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:9"
+          },
+          {
+            "duration": 0.12,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:9"
+          },
+          {
+            "duration": 0.099,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on Login button$",
+    "steps": [
+      {
+        "name": "I click on Login button",
+        "aggregatedDurations": {
+          "median": 0.366,
+          "average": 0.124666666
+        },
+        "durations": [
+          {
+            "duration": 0.664,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:10"
+          },
+          {
+            "duration": 0.344,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:10"
+          },
+          {
+            "duration": 0.366,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I am on homepage$",
+    "steps": [
+      {
+        "name": "I am on homepage",
+        "aggregatedDurations": {
+          "median": 0.05,
+          "average": 0.043
+        },
+        "durations": [
+          {
+            "duration": 0.069,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:28"
+          },
+          {
+            "duration": 0.01,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:28"
+          },
+          {
+            "duration": 0.05,
+            "location": "file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:28"
+          }
+        ]
+      }
+    ]
+  }
+]

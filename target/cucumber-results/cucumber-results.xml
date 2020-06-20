@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="161.076">
+<testcase classname="Search product Feature" name="Verfiy heroImage functionality on Homepage" time="54.51">
+<failure message="expected:&lt;CANON[]&gt; but was:&lt;CANON[ SEE&#10;IMPOSSIBLE]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given I open my application.................................................passed
+Then I click on PromoBtn popup..............................................passed
+Then I click on MyAccountLogo button........................................passed
+Then I click on the "Login" buttonLink......................................passed
+Then I enter emailAddress "dhiraj.shukla@adapty.com"........................passed
+Then I enter user password "Intel@1234".....................................passed
+Then I click on Login button................................................passed
+Given I am on homepage......................................................passed
+Then I verify the all "CANON" on Homepage...................................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<CANON[]> but was:<CANON[ SEE
+IMPOSSIBLE]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at Actions.CanonHomePage.verifyHeroImagesOnHomePage(CanonHomePage.java:101)
+	at StepDefinition.CanonHomePageStepDef.verifyheroImae(CanonHomePageStepDef.java:80)
+	at ✽.I verify the all "CANON" on Homepage(file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:29)
+]]></failure>
+</testcase>
+<testcase classname="Search product Feature" name="Verfiy heroImage functionality on Homepage 2" time="56.322">
+<failure message="expected:&lt;[BECOME A CANON]&gt; but was:&lt;[CANON SEE&#10;IMPOSSIBLE]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given I open my application.................................................passed
+Then I click on PromoBtn popup..............................................passed
+Then I click on MyAccountLogo button........................................passed
+Then I click on the "Login" buttonLink......................................passed
+Then I enter emailAddress "dhiraj.shukla@adapty.com"........................passed
+Then I enter user password "Intel@1234".....................................passed
+Then I click on Login button................................................passed
+Given I am on homepage......................................................passed
+Then I verify the all "BECOME A CANON" on Homepage..........................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[BECOME A CANON]> but was:<[CANON SEE
+IMPOSSIBLE]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at Actions.CanonHomePage.verifyHeroImagesOnHomePage(CanonHomePage.java:101)
+	at StepDefinition.CanonHomePageStepDef.verifyheroImae(CanonHomePageStepDef.java:80)
+	at ✽.I verify the all "BECOME A CANON" on Homepage(file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:29)
+]]></failure>
+</testcase>
+<testcase classname="Search product Feature" name="Verfiy heroImage functionality on Homepage 3" time="49.834">
+<failure message="expected:&lt;[EXPERIENC]E&gt; but was:&lt;[CANON SEE&#10;IMPOSSIBL]E&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given I open my application.................................................passed
+Then I click on PromoBtn popup..............................................passed
+Then I click on MyAccountLogo button........................................passed
+Then I click on the "Login" buttonLink......................................passed
+Then I enter emailAddress "dhiraj.shukla@adapty.com"........................passed
+Then I enter user password "Intel@1234".....................................passed
+Then I click on Login button................................................passed
+Given I am on homepage......................................................passed
+Then I verify the all "EXPERIENCE" on Homepage..............................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[EXPERIENC]E> but was:<[CANON SEE
+IMPOSSIBL]E>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at Actions.CanonHomePage.verifyHeroImagesOnHomePage(CanonHomePage.java:101)
+	at StepDefinition.CanonHomePageStepDef.verifyheroImae(CanonHomePageStepDef.java:80)
+	at ✽.I verify the all "EXPERIENCE" on Homepage(file:///C:/Users/JJPL-212/eclipse-workspace/New/Cucumber-Tests/src/test/Features/CanonHomePageFunctionality.feature:29)
+]]></failure>
+</testcase>
+</testsuite>
