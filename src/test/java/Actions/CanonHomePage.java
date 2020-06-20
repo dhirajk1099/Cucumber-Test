@@ -1,18 +1,16 @@
 package Actions;
 
-import java.io.IOException;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import Resources.DriverInitialization;
 import Resources.ReadExcelData;
-import io.cucumber.messages.internal.com.google.common.base.Verify;
 
 public class CanonHomePage extends BaseClass {
 	ReadExcelData readExcel = new ReadExcelData();
@@ -95,7 +93,16 @@ public class CanonHomePage extends BaseClass {
 
 	}
 
-	public void getSku() throws IOException {
+	public void verifyHeroImagesOnHomePage(String heroImgtext) {
+		List<WebElement> heroImgList = driver.findElements(By.xpath("//li[@role='presentation']"));
+		for (int i = 0; i < heroImgList.size(); i++) {
+			heroImgList.get(i).click();
+			WebElement herotext = driver.findElement(By.xpath("//div[@class='canon-heading']"));
+			String actualText = herotext.getText();
+			Assert.assertEquals(heroImgtext, actualText);
+			System.out.println("This is the heroImgText "+heroImgtext );
 
+		}
 	}
+
 }

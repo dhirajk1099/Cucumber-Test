@@ -19,30 +19,15 @@ Feature: Search product Feature
     And Add the product in to cart
 
     Examples: 
-      | Sku      | SuggestedTitel         | Titel                  |
-      | 1073C001 | PowerShot SX620 HS Red | PowerShot SX620 HS Red |
-      | 3075C002 | EOS R Body             | EOS R Boddy            |
+      | Sku      | SuggestedTitel     | Titel              |
+      | 1957C002 | Speedlite 470EX-AI | Speedlite 470EX-AI |
+      | 3075C002 | EOS R Body         | EOS R Body         |
 
-  Scenario Outline: Verfiy add to cart functionality for Hardwar+Carepak product
+  @smoke
+  Scenario: Verfiy heroImage functionality on Homepage
     Given I am on homepage
-    Then I enter the product Sku in searchBox "<Sku>"
-    Then I click on suggested "<SuggestedTitel>" title
-    Then I verify the "<Titel>" of the Product on PDP page
-    Then I verify the status on PDP page
-    And Add the product in to cart
-
-  Scenario Outline: Verfiy add to cart functionality for Hardwar+ Associated Carepak product
-    Given I am on homepage
-    Then I enter the product Sku in searchBox "<Sku>"
-    Then I click on suggested "<SuggestedTitel>" title
-    Then I verify the "<Titel>" of the Product on PDP page
-    Then I verify the status on PDP page
-    And Add the product in to cart
-
-  Scenario Outline: Verfiy add to cart functionality for only Carepak product
-    Given I am on homepage
-    Then I click on the 
-    Then I click on suggested "<SuggestedTitel>" title
-    Then I verify the "<Titel>" of the Product on PDP page
-    Then I verify the status on PDP page
-    And Add the product in to cart
+    Then I verify the all "<heroImagesText>" on Homepage
+      | Datatables     |
+      | CANON          |
+      | BECOME A CANON |
+      | EXPERIENCE     |

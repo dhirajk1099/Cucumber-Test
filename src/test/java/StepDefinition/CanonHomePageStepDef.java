@@ -75,5 +75,9 @@ public class CanonHomePageStepDef extends DriverInitialization{
 		chp.addProductInCart();
 	}
 	
+	@Then("^I verify the all \"([^\"]*)\" on Homepage$")
+	public void verifyheroImae(String herotext) {
+		chp.verifyHeroImagesOnHomePage(herotext);
+	}
 }
 
